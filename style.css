@@ -1,0 +1,130 @@
+h1 {
+	padding-top: 50px;
+	padding-bottom: 40px;
+	text-align: center;
+	font-family: Whitney SSm;
+	text-decoration: underline;
+	color: black;
+}
+
+body {
+	font-size: 17px;
+	font-family: Whitney SSm;
+	color: black;
+	position: relative;
+    z-index: 1;
+}
+
+/*To set background image with less opacity*/
+.background {
+	position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(images/newspaper.jpeg);
+    opacity: .6;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: fixed;
+}
+
+/*To make sure no element goes beyond certain point on page*/
+.neat {
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 50px;
+}
+
+/*Settings for first image*/
+#img-1 {
+	float: left;
+	width: 500px;
+	height: 380px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+/*Settings for second image*/
+#img-2 {
+	float: right;
+	width: 650px;
+	height: 380px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/*bottom margin for paragraphs*/
+.format {
+	margin-bottom: 15px;
+}
+
+/*To give structure and columns to entire div on the bottom of the page*/
+.main {
+	font-family: roboto;
+	display: inline-block;
+	column-count: 3;
+    column-gap: 40px;
+    webkit-column-width: 200px;
+    moz-column-width: 200px;
+    column-width: 200px;
+    column-rule: 3px;
+    column-rule-style: solid;
+    border: solid 3px;
+    background-color: #97DBF0;
+}
+
+/*Settings for all the columns*/
+.column {
+	float: left;
+	clear: right;
+    width: 400px;
+    height: 720px;
+    padding: 0 20px;
+    display: block;
+}
+
+/*Settings for the second header*/
+h2 {
+	font-family: Whitney SSm;
+	column-span: all;
+	text-align: center;
+	font-size: 30px;
+	border-bottom: 3px solid;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+/*Left column settings*/
+.column.one {
+	width: 85%;
+	float: left;
+	padding: 12px 35px;
+	overflow: scroll;	
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+
+/*Middle column settings*/
+.column.two {
+	width: 90%; 
+	float: left;
+	padding: 8px 15px;
+	margin: 0px 5px 5px 5px;
+	overflow: scroll;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+
+/*Right column settings*/
+.column.three {
+	width: 90%;
+	float: left;
+	padding: 8px 15px;
+	overflow: scroll;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
